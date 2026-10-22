@@ -1,10 +1,10 @@
 /* Eenvoudige offline-cache voor Run Coach. Verhoog CACHE bij elke update. */
-const CACHE = "runcoach-cindy-v1";
+const CACHE = "runcoach-cindy-v1-mooi";
 const ASSETS = [
   "./",
   "./index.html",
-  "./styles.css?v=1",
-  "./app.js?v=1",
+  "./styles.css?v=1-mooi",
+  "./app.js?v=1-mooi",
   "./coach.jpg",
   "./icon-192.png",
   "./icon-512.png",

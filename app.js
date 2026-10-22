@@ -112,49 +112,50 @@ const za  = (o) => ({ day: "za", dayLabel: "Zaterdag",  kind: KIND_BY_ZONE[o.zon
 
 const PLAN = [
   /* ---------- Fase 1 · Slim opbouwen ---------- */
-  { week: 1, dates: "26 okt–1 nov", phase: "Fase 1 · Slim opbouwen", sessions: [
-    di({ zone: "duur", km: 6, title: "6 km rustig", goal: "Rustig beginnen", why: "Je kunt al 10 km, maar je knie liet merken dat het te snel ging. Daarom begint dit schema bewust rustig. Je longen zijn snel, je pezen en gewrichten hebben meer tijd nodig. Rustig opbouwen is hier de snelste weg naar 25 km.", blocks: [
+  { week: 1, dates: "26 okt–1 nov", phase: "Fase 1 · Slim opbouwen", note: "We beginnen bewust rustig. Je kunt al 10 km, maar je knie moet wennen aan vaker lopen. Liever te makkelijk dan te zwaar.", sessions: [
+    di({ zone: "duur", km: 6, title: "Rustig instappen", goal: "Lekker beginnen, niets forceren", why: "Je kunt al 10 km, maar je knie liet merken dat het te snel ging. Daarom begint dit schema bewust rustig. Je longen zijn snel, je pezen en gewrichten hebben meer tijd nodig. Rustig opbouwen is hier de snelste weg naar 25 km.", blocks: [
       "6 km op 7:20–8:00/km",
       "Rustig betekent: je kunt nog praten",
       "Wandelen tussendoor mag altijd",
     ] }),
-    don({ zone: "duur", km: 6, title: "6 km rustig", goal: "Basis, voor je krachttraining", blocks: [
+    don({ zone: "duur", km: 6, title: "Rustig lopen, daarna kracht", goal: "Eerst lopen, dan je krachttraining", blocks: [
       "6 km op 7:20–8:00/km",
       "Loop eerst en doe daarna je krachttraining, dan zijn je benen fris voor het lopen",
     ] }),
-    za({ zone: "lang", km: 11, title: "11 km rustig", goal: "Je eerste lange zaterdag", blocks: [
+    za({ zone: "lang", km: 11, title: "Je eerste lange zaterdag", goal: "Net iets verder dan je al kunt", blocks: [
       "11 km op 7:30–8:15/km",
-      "Net iets verder dan je al kunt, en lekker rustig",
+      "Rustig starten, het tempo maakt niet uit",
       "Voel je je knie? Wandel even en loop rustig verder. Blijft het, stop dan",
     ] }),
   ]},
-  { week: 2, dates: "2–8 nov", phase: "Fase 1 · Slim opbouwen", sessions: [
-    di({ zone: "tempo", km: 7, title: "7 km met 3× 4 min tempo", goal: "Eerste tempoblokjes", blocks: [
+  { week: 2, dates: "2–8 nov", phase: "Fase 1 · Slim opbouwen", note: "Dinsdag je eerste tempoblokjes. Zaterdag loop je verder dan je ooit liep: 13 km.", sessions: [
+    di({ zone: "tempo", km: 7, title: "Eerste tempoblokjes", goal: "Even voelen hoe stevig voelt", blocks: [
       "2 km rustig inlopen",
       "3× 4 min op 6:25–6:45/km, met 2 min rustig ertussen",
       "Rustig uitlopen tot 7 km",
+      "Stevig is niet hard: je kunt nog korte zinnen zeggen",
     ] }),
-    don({ zone: "duur", km: 6, title: "6 km rustig", goal: "Basis", blocks: ["6 km op 7:20–8:00/km"] }),
-    za({ zone: "lang", km: 13, title: "13 km rustig", goal: "Lange duurloop", blocks: [
+    don({ zone: "duur", km: 6, title: "Rustig doorlopen", goal: "Basis, daarna kracht", blocks: ["6 km op 7:20–8:00/km"] }),
+    za({ zone: "lang", km: 13, title: "Lange loop, iets verder", goal: "13 km, je nieuwe record", blocks: [
       "13 km op 7:30–8:15/km",
       "Neem wat te drinken mee",
     ] }),
   ]},
-  { week: 3, dates: "9–15 nov", phase: "Fase 1 · Slim opbouwen", sessions: [
-    di({ zone: "interval", km: 7, title: "7 km met 6× 2 min snel", goal: "Snelheid", blocks: [
+  { week: 3, dates: "9–15 nov", phase: "Fase 1 · Slim opbouwen", note: "Zaterdag je eerste 15 km! Neem drinken en iets te eten mee, en wandel gerust bij een drinkmoment.", sessions: [
+    di({ zone: "interval", km: 7, title: "Snelle blokjes", goal: "Je benen sneller laten draaien", blocks: [
       "2 km rustig inlopen",
       "6× 2 min op 6:00–6:20/km, met 2 min rustig ertussen",
       "Rustig uitlopen tot 7 km",
       "Snel is niet sprinten: houd elk blokje even snel",
     ] }),
-    don({ zone: "duur", km: 7, title: "7 km rustig", goal: "Basis", blocks: ["7 km op 7:20–8:00/km"] }),
-    za({ zone: "lang", km: 15, title: "15 km rustig", goal: "Vijftien kilometer!", blocks: [
+    don({ zone: "duur", km: 7, title: "Rustig doorlopen", goal: "Basis, daarna kracht", blocks: ["7 km op 7:20–8:00/km"] }),
+    za({ zone: "lang", km: 15, title: "🎉 Je eerste 15 km", goal: "Een mooie mijlpaal", blocks: [
       "15 km op 7:30–8:15/km",
-      "Drink onderweg en neem na een uur iets te eten",
+      "Drink onderweg en eet na een uur iets",
       "Wandelen bij een drinkmoment is prima",
     ] }),
   ]},
-  { week: 4, dates: "16–22 nov", phase: "Fase 1 · Slim opbouwen", recovery: true, sessions: [
+  { week: 4, dates: "16–22 nov", phase: "Fase 1 · Slim opbouwen", recovery: true, note: "Rustweek: korter lopen en sterker worden. Dinsdag test je je snelheid met een 5 km tijdrit.", sessions: [
     di({ zone: "tempo", km: 7, title: "⏱️ 5 km tijdrit", goal: "Waar sta je nu?", why: "Deze tijdrit laat zien hoe snel je nu bent. Daarmee kunnen we je tempo's straks precies goed zetten, en zien we hoe ver je van die 52 minuten op de 10 km af zit.", blocks: [
       "1 km rustig inlopen plus 3 korte versnellingen",
       "5 km zo vlot als je vandaag eerlijk kunt",
@@ -162,56 +163,56 @@ const PLAN = [
       "1 km rustig uitlopen",
       "Vul je tijd in, dan kijkt Coach Bart mee",
     ] }),
-    don({ zone: "herstel", km: 5, title: "5 km heel rustig", goal: "Rustweek", blocks: ["5 km langzamer dan 8:00/km"] }),
-    za({ zone: "lang", km: 12, title: "12 km rustig", goal: "Korte lange duurloop", why: "Rustweek: je lange duurloop is deze week korter. Je wordt sterker tijdens het herstellen, en je knie krijgt de tijd om bij te komen.", blocks: ["12 km op 7:30–8:15/km"] }),
+    don({ zone: "herstel", km: 5, title: "Heel rustig herstellen", goal: "Bijkomen van je tijdrit", blocks: ["5 km langzamer dan 8:00/km"] }),
+    za({ zone: "lang", km: 12, title: "Rustweek: ontspannen lange loop", goal: "Korter, en lekker genieten", why: "Rustweek: je lange loop is deze week korter. Je wordt sterker tijdens het herstellen, en je knie krijgt de tijd om bij te komen.", blocks: ["12 km op 7:30–8:15/km"] }),
   ]},
 
   /* ---------- Fase 2 · Op naar 25 km ---------- */
-  { week: 5, dates: "23–29 nov", phase: "Fase 2 · Op naar 25 km", sessions: [
-    di({ zone: "tempo", km: 8, title: "8 km met 2× 10 min tempo", goal: "Langer op tempo", blocks: [
+  { week: 5, dates: "23–29 nov", phase: "Fase 2 · Op naar 25 km", note: "Na de rustweek gaan we weer verder. Zaterdag 17 km, en probeer eens een bospad of de duinen.", sessions: [
+    di({ zone: "tempo", km: 8, title: "Langere tempoblokken", goal: "Langer stevig volhouden", blocks: [
       "2 km rustig inlopen",
       "2× 10 min op 6:25–6:45/km, met 3 min rustig ertussen",
       "Rustig uitlopen tot 8 km",
     ] }),
-    don({ zone: "duur", km: 7, title: "7 km rustig", goal: "Basis", blocks: ["7 km op 7:20–8:00/km"] }),
-    za({ zone: "lang", km: 17, title: "17 km rustig", goal: "Lange duurloop", blocks: [
+    don({ zone: "duur", km: 7, title: "Rustig doorlopen", goal: "Basis, daarna kracht", blocks: ["7 km op 7:20–8:00/km"] }),
+    za({ zone: "lang", km: 17, title: "Lange loop: op naar 17 km", goal: "Tijd op je benen", blocks: [
       "17 km op 7:30–8:15/km",
       "Eet elke 30 tot 40 min iets, drink onderweg",
-      "Loop hem eens op een bospad of door de duinen, goede oefening voor later",
+      "Loop hem eens op een bospad of door de duinen, goede oefening voor je trail later",
     ] }),
   ]},
-  { week: 6, dates: "30 nov–6 dec", phase: "Fase 2 · Op naar 25 km", sessions: [
-    di({ zone: "interval", km: 8, title: "8 km met 5× 3 min snel", goal: "Snelheid", blocks: [
+  { week: 6, dates: "30 nov–6 dec", phase: "Fase 2 · Op naar 25 km", note: "Zaterdag bijna een halve marathon. Oefen met eten onderweg, dan weet je straks wat je maag aankan.", sessions: [
+    di({ zone: "interval", km: 8, title: "Snelle blokjes, iets langer", goal: "Snelheid", blocks: [
       "2 km rustig inlopen",
       "5× 3 min op 6:00–6:20/km, met 2 min rustig ertussen",
       "Rustig uitlopen tot 8 km",
     ] }),
-    don({ zone: "duur", km: 7, title: "7 km rustig", goal: "Basis", blocks: ["7 km op 7:20–8:00/km"] }),
-    za({ zone: "lang", km: 19, title: "19 km rustig", goal: "Bijna een halve marathon", blocks: [
+    don({ zone: "duur", km: 7, title: "Rustig doorlopen", goal: "Basis, daarna kracht", blocks: ["7 km op 7:20–8:00/km"] }),
+    za({ zone: "lang", km: 19, title: "Bijna een halve marathon", goal: "19 km, rustig en sterk", blocks: [
       "19 km op 7:30–8:15/km",
       "Eet elke 30 tot 40 min iets, drink onderweg",
     ] }),
   ]},
-  { week: 7, dates: "7–13 dec", phase: "Fase 2 · Op naar 25 km", sessions: [
-    di({ zone: "tempo", km: 8, title: "8 km met 3× 8 min tempo", goal: "Laatste stevige training", blocks: [
+  { week: 7, dates: "7–13 dec", phase: "Fase 2 · Op naar 25 km", note: "Je generale: 22 km op zaterdag. Hierna weet je dat die 25 km gaat lukken.", sessions: [
+    di({ zone: "tempo", km: 8, title: "Laatste stevige training", goal: "Nog één keer stevig", blocks: [
       "2 km rustig inlopen",
       "3× 8 min op 6:25–6:45/km, met 2 min rustig ertussen",
       "Rustig uitlopen tot 8 km",
     ] }),
-    don({ zone: "duur", km: 7, title: "7 km rustig", goal: "Basis", blocks: ["7 km op 7:20–8:00/km"] }),
-    za({ zone: "lang", km: 22, title: "22 km rustig", goal: "Verder dan een halve marathon!", blocks: [
+    don({ zone: "duur", km: 7, title: "Rustig doorlopen", goal: "Basis, daarna kracht", blocks: ["7 km op 7:20–8:00/km"] }),
+    za({ zone: "lang", km: 22, title: "🎉 Verder dan een halve marathon", goal: "22 km, je generale", blocks: [
       "22 km op 7:30–8:15/km",
       "Eet elke 30 tot 40 min iets, drink onderweg",
-      "Volgende week je 25 km. Dit is je generale",
+      "Volgende week je 25 km!",
     ] }),
   ]},
-  { week: 8, dates: "14–20 dec", phase: "Fase 2 · Op naar 25 km", finish: true, raceLabel: "🎉 Jouw 25 km", raceSub: "25 km lopen, voor oud en nieuw", sessions: [
-    di({ zone: "duur", km: 6, title: "6 km met 4 versnellingen", goal: "Los en fris", blocks: [
+  { week: 8, dates: "14–20 dec", phase: "Fase 2 · Op naar 25 km", finish: true, raceLabel: "🎉 Jouw 25 km", raceSub: "25 km lopen, voor oud en nieuw", note: "Dit is je week! Doordeweeks lekker rustig, en zaterdag loop je je 25 km.", sessions: [
+    di({ zone: "duur", km: 6, title: "Los en fris", goal: "Benen wakker houden", blocks: [
       "5,5 km rustig",
       "4× 20 sec soepel versnellen",
       "Deze week geen zware benen in de krachttraining",
     ] }),
-    don({ zone: "herstel", km: 5, title: "5 km heel rustig", goal: "Benen fris voor zaterdag", blocks: ["5 km langzamer dan 8:00/km", "Vrijdag rust, en eet goed"] }),
+    don({ zone: "herstel", km: 5, title: "Benen sparen", goal: "Fris naar zaterdag", blocks: ["5 km langzamer dan 8:00/km", "Vrijdag rust, en eet goed"] }),
     za({ zone: "lang", km: 25, kind: "Mijlpaal", title: "🎉 25 km", goal: "Jouw doel: 25 km voor oud en nieuw", why: "Acht weken geleden was 10 km je langste loop. Vandaag loop je er 25. Rustig, op je eigen tempo, en wandelen bij een drinkmoment mag gewoon. Lukt het vandaag niet of zit het weer tegen? Dan loop je hem volgende week, nog ruim voor oud en nieuw.", blocks: [
       "Goed ontbijt, twee à drie uur voor je begint",
       "25 km op 7:30–8:15/km, de eerste 5 km extra rustig",
@@ -222,11 +223,11 @@ const PLAN = [
   ]},
 
   /* ---------- Fase 3 · Lekker het jaar uit ---------- */
-  { week: 9, dates: "21–27 dec", phase: "Fase 3 · Lekker het jaar uit", recovery: true, sessions: [
-    di({ zone: "herstel", km: 5, title: "5 km heel rustig", goal: "Bijkomen van je 25 km", blocks: ["5 km langzamer dan 8:00/km"] }),
-    don({ zone: "duur", km: 6, title: "6 km rustig", goal: "Kerstweek, lekker luchtig", blocks: ["6 km rustig", "Liep je je 25 km nog niet? Dan doe je hem deze zaterdag"] }),
-    za({ zone: "duur", km: 10, title: "10 km soepel", goal: "Lekker het jaar uitlopen", blocks: [
-      "10 km rustig, gewoon genieten",
+  { week: 9, dates: "21–27 dec", phase: "Fase 3 · Lekker het jaar uit", recovery: true, note: "Bijkomen en genieten van de kerst. Liep je je 25 km nog niet? Dan doe je hem deze zaterdag.", sessions: [
+    di({ zone: "herstel", km: 5, title: "Heel rustig bijkomen", goal: "Los na je 25 km", blocks: ["5 km langzamer dan 8:00/km"] }),
+    don({ zone: "duur", km: 6, title: "Rustig kerstrondje", goal: "Lekker luchtig", blocks: ["6 km rustig", "Liep je je 25 km nog niet? Dan doe je hem deze zaterdag"] }),
+    za({ zone: "duur", km: 10, title: "Lekker het jaar uitlopen", goal: "Gewoon genieten", blocks: [
+      "10 km rustig",
       "Benieuwd naar je 10 km-tijd? Loop de laatste 3 km iets vlotter",
       "Op naar 2027 en die 50 km trail 🌲",
     ] }),
@@ -234,6 +235,12 @@ const PLAN = [
 ];
 
 const INFO = [
+  { icon: "📱", title: "Zo werkt je app", items: [
+    "Tik op een training: je ziet precies wat je doet en waarom.",
+    "Klaar? Vul je afstand en tijd in en vink hem af. Zo zie je je voortgang groeien.",
+    "Bovenaan elke week staat in één zin waar het die week om draait.",
+    "Kan een week niet? Schuif alles een week op met de knop bij het schema, of zet een vakantie in je planning.",
+  ]},
   { icon: "🎯", title: "Je doelen, eerlijk bekeken", items: [
     "Je hoofddoel van dit blok: 25 km lopen voor oud en nieuw. Die staat op zaterdag 19 december, met een week reserve erachter.",
     "10 km in 52 minuten is 5:12 per km. Je liep 1:07, dat is anderhalve minuut per kilometer sneller. Dat haal je niet in acht weken, maar het is een prachtig doel voor 2027.",
@@ -697,6 +704,8 @@ function renderZones() {
 }
 
 function renderChart() {
+  const volumeSub = document.querySelector("#volumeChart")?.closest(".panel")?.querySelector(".panel-sub");
+  if (volumeSub) volumeSub.textContent = `${(typeof UNIT !== "undefined" ? UNIT : "min") === "min" ? "minuten" : "kilometers"} · gepland · gedaan`;
   const cwBar = currentWeek();
   const max = Math.max(...PLAN.map((w) => w.sessions.reduce((n, s) => n + s[UNIT], 0)));
   $("volumeChart").innerHTML = PLAN.map((w) => {
@@ -771,10 +780,14 @@ function renderWeeks() {
           ${w.week === cw ? `<span class="week-tag tag-now">Nu</span>` : w.week < cw ? (w.sessions.every((x) => log[sid(w.week, x.day)]?.done) ? `<span class="week-tag tag-done">✓ af</span>` : `<span class="week-tag tag-missed">gemist</span>`) : tagOf(w)}
         </header>
         ${planStrip}
+        ${w.note ? `<p class="week-note">${w.note}</p>` : ""}
         <div class="session-list">${sess}</div>
       </article>`;
   });
   $("weeksList").innerHTML = html;
+  /* Koppen altijd kloppend met het schema */
+  const schemaKop = [...document.querySelectorAll(".phase-head")].find((e) => /Het schema/.test(e.textContent));
+  if (schemaKop) schemaKop.textContent = `Het schema · ${PLAN.length} weken`;
   $("weeksList").querySelectorAll(".session").forEach((b) =>
     b.addEventListener("click", () => openDetail(+b.dataset.week, b.dataset.day)));
   observeReveals();

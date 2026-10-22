@@ -4,34 +4,34 @@
 :root {
   color-scheme: dark;
 
-  /* === Colorway: Cindy · geel, oranje, roze en groen === */
-  --bg-0: #0c0a10;
-  --bg-1: #15111a;
-  --card: #1c1722;
-  --card-2: #261f2d;
-  --line: rgba(255, 140, 66, 0.16);
-  --ink: #fff8f0;
-  --muted: #c4b5c0;
+  /* === Colorway: Cindy · zonnig pastel: geel, perzik, roze en mint === */
+  --bg-0: #0b0a0d;
+  --bg-1: #16111b;
+  --card: #1d1723;
+  --card-2: #261d2d;
+  --line: rgba(255, 179, 138, 0.14);
+  --ink: #fff8f3;
+  --muted: #c6b6b3;
 
-  --magma: #ff8c42;
-  --pastel-pink: #ff8c42;
-  --pastel-purple: #ffd23f;
-  --pastel-blue: #ff5d8f;
+  --magma: #ffb38a;
+  --pastel-pink: #ffb38a;
+  --pastel-purple: #ffe08a;
+  --pastel-blue: #ff9ec4;
 
   --volt: var(--pastel-pink);
-  --volt-ink: #2a1200;
+  --volt-ink: #3a1a0a;
   --flame: var(--pastel-pink);
   --azure: var(--pastel-blue);
   --violet: var(--pastel-purple);
 
   /* Zachte, duidelijk onderscheidbare trainingszones */
-  --z-herstel: #9be7b0;
-  --z-duur: #ffd23f;
-  --z-lang: #ff5d8f;
+  --z-herstel: #b9e9cc;
+  --z-duur: #ffe08a;
+  --z-lang: #ff9ec4;
   --z-opbouw: #b4d2ff;
-  --z-tempo: #ff8c42;
-  --z-doel: #ff8c42;
-  --z-interval: #5ad17a;
+  --z-tempo: #ffb38a;
+  --z-doel: #ffb38a;
+  --z-interval: #8fd9a8;
   --z-tienkm: #f0c674;
 
   --radius-md: 16px;
@@ -684,3 +684,7 @@ h1, h2, h3, h4, p { margin-top: 0; }
 
 /* ----- Laatst opgeslagen ----- */
 #lastSaved:empty { display: none; }
+
+/* ----- Uitleg per week ----- */
+.week-note { margin: -2px 2px 12px; padding: 9px 12px; border-radius: 12px; border: 1px solid color-mix(in srgb, var(--pastel-purple) 22%, transparent); background: color-mix(in srgb, var(--pastel-purple) 8%, transparent); color: var(--ink); font-size: 0.82rem; line-height: 1.45; }
+.week-note::before { content: "💡 "; }
